@@ -9,9 +9,131 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+      .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .poppins-semibold {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .poppins-bold {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>
     <title>Phone Hunter</title>
   </head>
-  <body>
-    <button class="btn btn-primary">Button</button>
+  <body class="lg:mx-20 lg:my-10">
+    <!-- header section starts here  -->
+    <header class="poppins-bold">
+      <section class="flex justify-between">
+        <h3 class="text-2xl">Phone Hunter</h3>
+        <button class="btn btn-primary text-xl">Sign Up</button>
+      </section>
+    </header>
+    <!-- header section ends here  -->
+    <!-- main section starts here  -->
+    <main>
+      <!-- hero section starts here  -->
+      <section class="">
+        <div class="hero">
+          <div class="hero-content text-center">
+            <div class="max-w-xl">
+              <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
+              <p class="py-6">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humou.
+              </p>
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="max-w-xl mx-auto"
+            src="./Group 48095420.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </section>
+      <!-- hero section ends here  -->
+      <!-- search section starts here  -->
+      <section class="mt-10">
+        <h3 class="poppins-semibold text-2xl text-center mb-6">
+          Search Your Phone
+        </h3>
+        <search class="text-center">
+          <input
+            type="text"
+            placeholder="Search your phone"
+            class="input w-full max-w-xs"
+          />
+          <button class="btn btn-primary">Search</button>
+        </search>
+      </section>
+      <!-- search section ends here  -->
+      <!-- card section starts here  -->
+      <section class="grid grid-cols-3 mt-8">
+        <div class="card w-96 bg-base-100 shadow-xl mb-6">
+          <figure>
+            <img src="https://placehold.co/600x400" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center mb-10">
+        <button class="btn btn-primary">Show All</button>
+      </div>
+      <!-- card section ends here  -->
+    </main>
+    <!-- main section ends here  -->
+    <!-- footer section starts here  -->
+    <footer class="p-10 bg-neutral text-neutral-content">
+      <section class="flex justify-between items-center">
+        <h3 class="text-2xl">Phone Hunter</h3>
+        <button class="btn btn-primary">Join Premium</button>
+      </section>
+      <hr class="my-7" />
+      <section class="footer">
+        <nav>
+          <header class="footer-title">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Legal</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </section>
+    </footer>
+    <!-- footer section ends here -->
+    <script src="app.js"></script>
   </body>
 </html>
