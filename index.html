@@ -74,20 +74,32 @@
         </h3>
         <search class="text-center">
           <input
+            id="search-field"
             type="text"
             placeholder="Search your phone"
             class="input w-full max-w-xs"
           />
-          <button class="btn btn-primary">Search</button>
+          <button class="btn btn-primary" onclick="handleSearch()">
+            Search
+          </button>
         </search>
       </section>
       <!-- search section ends here  -->
+      <section id="spinner" class="text-center my-5 hidden">
+        <span class="loading loading-spinner loading-lg"></span>
+      </section>
       <!-- card section starts here  -->
       <section id="card-container" class="grid grid-cols-3 mt-8">
         <!-- card will be created in js  -->
       </section>
       <div class="text-center mb-10">
-        <button class="btn btn-primary">Show All</button>
+        <button
+          id="btn-showAll"
+          class="btn btn-primary hidden"
+          onclick="handleShowAll()"
+        >
+          Show All
+        </button>
       </div>
       <!-- card section ends here  -->
     </main>
